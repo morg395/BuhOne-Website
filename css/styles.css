@@ -1,0 +1,1113 @@
+body {
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    transition: .2s;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Merriweather;
+    line-height: 138%;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: Roboto;
+    line-height: 138%;
+    color: #BDBDBD;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: Merriweather;
+    line-height: 138%;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Roboto;
+    line-height: 138%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+li {
+    display: block;
+}
+
+span.accent {
+    color: #005FA3;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0px 30px 0px 30px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.header {
+    padding: 30px 0px 30px 0px;
+}
+
+.hamburger {
+    position: relative;
+    height: 30px;
+    width: 40px;
+    display: none!important;
+    background: none;
+    padding: 0;
+    z-index: 9999;
+}
+
+.hamburger__item {
+    width: 40px;
+    height: 3px;
+    
+    background-color: #000;
+}
+
+.hamburger--active {
+    justify-content: center;
+}
+
+.hamburger--active .hamburger__item:nth-child(1) {
+    transform: rotate(45deg)
+                translateY(4px);
+}
+
+.hamburger--active .hamburger__item:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger--active .hamburger__item:nth-child(3) {
+    transform: rotate(-45deg)
+                translateY(-4px);
+}
+
+.header__block {
+    gap: 20px;
+}
+
+.header__info {
+    gap: 40px;
+}
+
+.info__item {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #000;
+    gap: 15px;
+}
+
+.menu__list {
+    gap: 65px;
+}
+
+.menu__link {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-family: Roboto;
+    color: #000;
+}
+
+.menu__link:hover {
+    color: #005FA3;
+}
+
+.menu__link:active {
+    color: #003459;
+}
+
+.intro {
+    height: 670px;
+    position: relative;
+    background: url('/images/intro/background_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.intro__content {
+    padding-top: 150px;
+}
+
+.intro__title {
+    
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.btn {
+    width: 270px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #fff;
+    background-color: #005fa3;
+}
+
+.btn:hover {
+    background-color: #006ebd;
+}
+
+.btn:active {
+    padding-top: 3px;
+}
+
+.form__submit:active {
+    
+}
+
+.slick-prev, .slick-next {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    top: 120%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.slick-disabled {
+    background-color: rgba(255,255,255,0.15);
+}
+
+.slick-prev {
+    left: inherit;
+    right: 0;
+    transform: translate(-58%, -50%);
+}
+
+.slick-prev:hover, .slick-prev:focus, 
+.slick-next:hover, .slick-next:focus {
+    background-color: rgba(255,255,255,0.5);
+} 
+
+.slick-dots {
+    width: auto;
+    left: 0;
+    text-align: left;
+    bottom: -110px;
+}
+
+.slick-dots li {
+    margin: 0 15px;
+}
+
+.slick-dots li:first-child {
+    margin-left: 0px;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 100px;
+}
+
+li.slick-active button {
+    background: rgba(255,255,255,1);
+}
+
+.services {
+    width: 100%;
+    padding: 140px 0px;
+    background-color: #EBEBEB;
+}
+
+.section__title {
+    margin-bottom: 20px;
+}
+
+.section__subtitle {
+    margin-bottom: 80px;
+}
+
+.services__content {
+    gap: 30px;
+}
+
+.card {
+    width: 370px;
+    height: 380px;
+    position: relative;
+}
+
+.card:hover .card__effect {
+    opacity: 1;
+}
+
+.card__title {
+    position: absolute;
+    bottom: 45px;
+    left: 45px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 126%;
+    font-family: Roboto;
+    color: #fff;
+    z-index: 999;
+}
+
+.card__effect {
+    width: 370px;
+    height: 380px;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 95, 163, 0.65), rgba(0, 95, 163, 0.65)), url(4.jpg);
+    opacity: 0;
+}
+
+.card__img {
+    width: 370px;
+    height: 380px;
+}
+
+.about {
+    padding-top: 140px;
+    margin-bottom: 140px;
+}
+
+.about__subtitle {
+    margin-bottom: 60px;
+}
+
+.about__text, .about__content {
+    width: 50%;
+}
+
+.about__text {
+    margin-right: 30px;
+}
+
+.about__content {
+    gap: 30px;
+}
+
+.achievements__card {
+    width: 255px;
+    height: 255px;
+    padding: 0px 30px;
+    background-color: #EBEBEB;
+}
+
+.achievements__card:hover {
+    background-color: #005FA3;
+}
+
+.achievements__card:hover .achievements__number {
+    color: #fff;
+}
+
+.achievements__card:hover .achievements__title {
+    color: #fff;
+}
+
+.achievements__card:hover .achievements__link {
+    color: #fff;
+}
+
+.achievements__number {
+    font-size: 55px;
+    font-weight: 900;
+    font-family: Roboto;
+    margin-bottom: 20px;
+}
+
+.achievements__title {
+    max-width: 110px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Roboto;
+    margin-bottom: 40px;
+}
+
+.achievements__link {
+    width: 70px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Roboto;
+    color: #005FA3;
+    text-decoration: underline;
+}
+
+.clients {
+    position: relative;
+    padding: 140px 0px;
+    background-color: #EBEBEB;
+}
+
+.clients__content {
+    height: 130px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 100px;
+}
+
+.slick-slide.img__wrapper {  
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.clients__content .slick-disabled {
+    background-color: #2877ac5e!important;
+}
+
+.clients__content .slick-prev {
+    transform: translate(-58%, -0%);
+    background-color: #005FA3;
+    top: 130%;
+}
+
+.clients__content .slick-next {
+    transform: translate(0%, -0%);
+    background-color: #005FA3;
+    top: 130%;
+}
+
+.clients__content li.slick-active button {
+    background: #005FA3;
+    opacity: 1!important;
+}
+
+.clients__content .slick-dots li button {
+    background: #005FA3;
+    opacity: 0.4;   
+}
+
+.reviews {
+    padding-top: 140px;
+}
+
+.reviews__content {
+    gap: 30px;
+}
+
+.reviews__item {
+    width: 100%;
+    padding: 45px 95px;
+    background-color: #EBEBEB;
+}
+
+.review__text {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Roboto;
+    line-height: 138%;
+    margin-bottom: 30px;
+}
+
+.review__footer {
+    gap: 30px;
+}
+
+.review__person {
+    gap: 5px;
+}
+
+.review__name {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: Roboto;
+}
+
+.review__company {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #4F4F4F;
+}
+
+.reviews__content .slick-disabled {
+    background-color: #2877ac5e!important;
+}
+
+.reviews__content .slick-prev {
+    transform: translate(-58%, -0%);
+    background-color: #005FA3;
+}
+
+.reviews__content .slick-next {
+    transform: translate(0%, -0%);
+    background-color: #005FA3;
+}
+
+.reviews__content li.slick-active button {
+    background: #005FA3;
+    opacity: 1!important;
+}
+
+.reviews__content .slick-dots li button {
+    background: #005FA3;
+    opacity: 0.4;   
+}
+
+.pagination {
+    display: flex;
+    gap: 40px;
+}
+
+.dots button {
+    font-size: 0;
+}
+
+.pagination li {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.pagination li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+}
+
+.contact {
+    width: 100%;
+    background-image: url('/images/contact/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 140px 0px;
+    margin-top: 240px;
+}
+
+.contact__col {
+    width: 50%;
+}
+
+.contact__title {
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.contact__desc {
+    max-width: 460px;
+    font-weight: 300;
+    font-family: Roboto;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.methods {
+    gap: 30px;
+}
+
+.methods__link {
+    font-size: 21px;
+    font-weight: 300;
+    font-family: Roboto;
+    color: #fff;
+    gap: 15px;
+}
+
+.form {
+    gap: 35px;
+}
+
+.form__top {
+    gap: 30px;
+}
+
+.form__bottom {
+    gap: 50px;
+}
+
+.form__label {
+    font-weight: 400;
+    font-family: Roboto;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.form__input {
+    width: 255px;
+    height: 40px;
+    font-size: 21px;
+    font-weight: 300;
+    font-family: Roboto;
+    color: #BDBDBD;
+    background: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+.form__input::placeholder, .form__textarea::placeholder {
+    color: #BDBDBD;
+    transition: .2s;
+}
+
+.form__textarea {
+    width: 540px;
+    height: 105px;
+    font-size: 21px;
+    font-weight: 300;
+    font-family: Roboto;
+    color: #BDBDBD;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+  }
+  
+:focus::-moz-placeholder {
+    color: transparent
+}
+  
+:focus:-moz-placeholder {
+    color: transparent
+}
+  
+:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+.footer, .footer__wrapper {
+    height: 100px;
+}
+
+.footer__copy, .footer__developed {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Roboto;
+}
+
+@media screen and (max-width: 1229px) {
+    .card, .card__effect, .card__img {
+        width: 450px;
+        height: 460px;
+    }
+    
+    .card__title {
+        max-width: 50%;
+        bottom: 35px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 1169px) {
+    .about__text {
+        max-width: 30%;
+    }
+
+    .about__content {
+        width: 60%;
+        height: 80%;
+    }
+
+    .achievements__card {
+        width: 245px;
+        height: 245px;
+    }
+}
+
+@media screen and (max-width: 1139px) {
+    .contact__col {
+        width: 100%;
+    }
+
+    .contact__wrapper {
+        flex-direction: column!important;
+        gap: 100px;
+    } 
+
+    .form__top, .form__bottom {
+        justify-content: inherit;
+        align-items: inherit;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 42px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 42px;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+
+    .hamburger {
+        display: flex!important;
+        z-index: 9999;
+    }
+
+    .header__block {
+        display: none!important;
+    }
+
+    .header__block--mobile {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse!important;
+        gap: 80px;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px
+    }
+
+    .info__item {
+        font-size: 18px;
+    }
+
+    .menu__link {
+        font-size: 24px;
+    }
+
+    .header__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services__content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card, .card__effect, .card__img {
+        width: 320px;
+        height: 330px;
+    }
+
+    .about__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .about__text, .about__content {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__text {
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+    }
+
+    .clients__logo {
+        width: 75%;
+    }
+
+    .review__text, .review__name {
+        font-size: 16px;
+    }
+
+    .review__img {
+        transform: scale(0.9);
+    }
+
+    .review__company {
+        font-size: 12px;
+    }
+    
+    .review__text {
+        text-align: left;
+    }
+    
+    .clients__wrapper, .reviews__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact__desc {
+        text-align: center;
+    }
+    
+    .contact__wrapper, .contact__col, .contact__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    
+    .methods__link {
+        font-size: 18px;
+        gap: 10px;
+    }
+    
+    .methods__link svg {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 729px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    h3 {
+        font-size: 36px;
+    }
+    
+    h4 {
+        font-size: 14px;
+    }
+    
+    .header {
+        padding: 20px 0px 20px 0px;
+    }
+    
+    .header__logo {
+        width: 165px;
+        height: 38px;
+    }
+    
+    .hamburger {
+        transform: scale(0.8)
+    }
+    
+    .header__block {
+        gap: 60px;
+    }
+    
+    .menu__list, .header__info {
+        gap: 30px;
+    }
+    
+    .menu__link {
+        font-size: 20px;
+    }
+    
+    .info__item {
+        font-size: 16px;
+    }
+    
+    .section__title {
+        margin-bottom: 15px;
+    }
+    
+    .section__subtitle {
+        margin-bottom: 60px;
+    }
+    
+    .btn {
+        width: 250px;
+        height: 55px;
+        font-size: 16px;
+    }
+    
+    .slick-prev, .slick-next {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .slick-next {
+        right: -21px;
+    }
+    
+    .slick-dots li {
+        margin: 0 10px;
+    }
+    
+    .about__subtitle {
+        margin-bottom: 40px;
+    }
+    
+    .card, .card__effect, .card__img {
+        width: 230px;
+        height: 240px;
+    }
+    
+    .card__title {
+        bottom: 30px;
+        left: 25px;
+        font-size: 18px;
+    }
+    
+    .achievements__card {
+        width: 210px;
+        height: 210px;
+    }
+    
+    .achievements__number {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    
+    .achievements__title {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    
+    .achievements__link {
+        font-size: 12px;
+    }
+    
+    .reviews__item {
+        padding: 30px 70px;
+    }
+    
+    .review__text, .review__name {
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    .review__company {
+        font-size: 11px;
+    }
+    
+    .clients__content .slick-prev {
+        top: 150%;
+    }
+    
+    .clients__content .slick-next {
+        top: 150%;
+    }
+    
+    .clients__logo, .img__wrapper--size {
+        max-width: 60%!important;
+    }
+    
+    .form__label {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+    
+    .form__input {
+        width: 230px;
+        height: 25px;
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+    
+    .form__textarea {
+        width: 490px;
+        font-size: 16px;
+    }
+    
+    .footer__copy, .footer__developed {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 557px) {
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 14px;
+    }
+    
+    h3 {
+        font-size: 32px;
+    }
+    
+    h4 {
+        font-size: 13px;
+    }
+    
+    .services {
+        text-align: center;
+    }
+    
+    .clients__logo, .img__wrapper--size {
+        max-width: 100%!important;
+    }
+    
+    .reviews__item {
+        padding: 30px 40px;
+    }
+    
+    .review__text, .review__name {
+        font-size: 12px;
+        text-align: left;
+    }
+    
+    .review__footer {
+        gap: 20px;
+    }
+    
+    .methods {
+        flex-direction: column;
+    }
+    
+    .form__top {
+        flex-direction: column;
+    }
+    
+    .form__input {
+        width: 280px;
+        height: 25px;
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+    
+    .form__textarea {
+        width: 280px;
+        height: 150px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    h1 {
+        font-size: 26px;
+    }
+    
+    h2 {
+        font-size: 13px;
+    }
+    
+    h3 {
+        font-size: 26px;
+    }
+    
+    h4 {
+        font-size: 12px;
+    }
+    
+    .header__logo {
+        width: 145px;
+        height: 32px;
+    }
+    
+    .hamburger {
+        transform: scale(0.7)
+    }
+    
+    .btn {
+        width: 220px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    .contact__wrapper {
+        gap: 80px;
+    }
+    
+    .contact__desc {
+        margin-bottom: 60px;
+    }
+    
+    .methods__link {
+        font-size: 16px;
+        gap: 8px;
+    }
+    
+    .methods__link svg {
+        transform: scale(0.8)
+    }
+}
+
+@media screen and (max-width: 364px) {
+    h1 {
+        font-size: 23px;
+    }
+    
+    h2 {
+        font-size: 12px;
+    }
+    
+    h3 {
+        font-size: 23px;
+    }
+    
+    h4 {
+        font-size: 11px;
+    }
+    
+    .intro__title {
+        margin-bottom: 60px;
+    }
+    
+    .btn {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .intro__wrapper .slick-prev, .intro__wrapper .slick-next {
+        top: 130%;
+    }
+    
+    .review__img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .review__text, .review__name {
+        font-size: 11px;
+    }
+    
+    .review__company {
+        font-size: 10px;
+        text-align: left;
+    }
+    
+    .footer__copy, .footer__developed {
+        font-size: 10px;
+    }
+}

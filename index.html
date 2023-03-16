@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuhOne</title>
+    <link rel="stylesheet" href="css/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/slick/slick.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper d-flex jcs-between ai-center">
+                <a class="header__logo" href="#">
+                    <img src="/images/header/logo.png" alt="BuhOne Company">
+                </a>
+                <button class="hamburger d-flex fd-col jcs-between">
+                    <span class="hamburger__item"></span>
+                    <span class="hamburger__item"></span>
+                    <span class="hamburger__item"></span>
+                </button>
+                <div class="header__block d-flex fd-col">
+                    <ul class="header__info info d-flex">
+                        <li class="info__item d-flex ai-center">
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.8373 0H1.1627C0.523313 0 0 0.522821 0 1.1627V16.0511C0 16.6909 0.523313 17.2142 1.1627 17.2142H8.8373C9.47669 17.2142 10 16.6919 10 16.0515V1.1627C10 0.522821 9.47669 0 8.8373 0ZM3.77238 0.838088H6.22762C6.30533 0.838088 6.36829 0.901043 6.36829 0.979245C6.36829 1.05695 6.30533 1.11991 6.22762 1.11991H3.77238C3.69467 1.11991 3.63171 1.05695 3.63171 0.979245C3.63171 0.901043 3.69467 0.838088 3.77238 0.838088ZM5 16.6329C4.67883 16.6329 4.41865 16.3727 4.41865 16.0511C4.41865 15.7294 4.67883 15.4697 5 15.4697C5.32117 15.4697 5.58135 15.7294 5.58135 16.0511C5.58135 16.3727 5.32117 16.6329 5 16.6329ZM9.19093 15.0625H0.809069V1.84389H9.19093V15.0625Z" fill="#005FA3"/>
+                            </svg>
+                            8 (111) 222-33-44                           
+                        </li>
+                        <li class="info__item d-flex ai-center">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 0C3.80558 0 0 3.80558 0 8.5C0 13.1944 3.80558 17 8.5 17C13.1944 17 17 13.1944 17 8.5C16.994 3.80809 13.1919 0.00601673 8.5 0ZM8.86465 16.2525V14.7574C8.86465 14.556 8.70138 14.3928 8.5 14.3928C8.29862 14.3928 8.13535 14.556 8.13535 14.7574V16.2525C4.13691 16.0616 0.938428 12.8631 0.747533 8.86465H2.2426C2.44398 8.86465 2.60725 8.70138 2.60725 8.5C2.60725 8.29862 2.44398 8.13535 2.2426 8.13535H0.747533C0.938428 4.13691 4.13691 0.938428 8.13535 0.747533V2.2426C8.13535 2.44398 8.29862 2.60725 8.5 2.60725C8.70138 2.60725 8.86465 2.44398 8.86465 2.2426V0.747533C12.8631 0.938428 16.0616 4.13691 16.2525 8.13535H14.7574C14.556 8.13535 14.3928 8.29862 14.3928 8.5C14.3928 8.70138 14.556 8.86465 14.7574 8.86465H14.761H16.2561C16.0651 12.8644 12.8645 16.0634 8.86465 16.2525Z" fill="#005FA3"/>
+                                <path d="M12.3471 11.8913L8.86465 8.35049V4.67117C8.86465 4.46979 8.70137 4.30652 8.5 4.30652C8.29862 4.30652 8.13535 4.46979 8.13535 4.67117V8.5C8.13576 8.59568 8.17373 8.68734 8.24109 8.75526L11.8256 12.4018C11.9666 12.5458 12.1976 12.5482 12.3416 12.4072C12.4856 12.2662 12.488 12.0352 12.3471 11.8913Z" fill="#005FA3"/>
+                            </svg>       
+                            Пн-Пт 10:00-18:00                         
+                        </li>
+                        <li class="info__item d-flex ai-center">
+                            <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.6115 0H2.73165C1.22485 0 0 1.22485 0 2.73165V14.2684C0 15.7752 1.22485 17 2.73165 17H19.6069C21.1137 17 22.3385 15.7752 22.3385 14.2684V2.73627C22.3431 1.22947 21.1183 0 19.6115 0ZM21.0952 14.2684C21.0952 15.0865 20.4296 15.752 19.6115 15.752H2.73165C1.91354 15.752 1.24796 15.0865 1.24796 14.2684V2.73627C1.24796 1.91816 1.91354 1.25258 2.73165 1.25258H19.6069C20.425 1.25258 21.0905 1.91816 21.0905 2.73627V14.2684H21.0952Z" fill="#005FA3"/>
+                                <path d="M14.088 8.35673L19.5513 3.45733C19.8055 3.22623 19.8287 2.83335 19.5975 2.57451C19.3664 2.3203 18.9736 2.29719 18.7147 2.52829L11.1807 9.29039L9.71093 7.97772C9.7063 7.9731 9.70168 7.96848 9.70168 7.96386C9.66933 7.9315 9.63697 7.90377 9.59999 7.87604L3.61903 2.52367C3.36019 2.29257 2.96731 2.31568 2.73621 2.57451C2.50511 2.83335 2.52822 3.22623 2.78705 3.45733L8.31506 8.39833L2.81016 13.552C2.56057 13.7877 2.54671 14.1806 2.78243 14.4348C2.90723 14.5642 3.07362 14.6335 3.24002 14.6335C3.39255 14.6335 3.54507 14.5781 3.66525 14.4671L9.25334 9.23955L10.7694 10.5938C10.8896 10.7001 11.0375 10.751 11.1854 10.751C11.3333 10.751 11.4858 10.6955 11.6014 10.5892L13.159 9.19333L18.7147 14.4717C18.8349 14.5873 18.9921 14.6428 19.1446 14.6428C19.311 14.6428 19.4728 14.5781 19.5975 14.4486C19.8333 14.199 19.824 13.8015 19.5744 13.5658L14.088 8.35673Z" fill="#005FA3"/>
+                            </svg>   
+                            order@buhone.ru                   
+                        </li>
+                        <li class="info__item d-flex ai-center">
+                            <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.4882 0C3.05271 0 0.257812 2.7949 0.257812 6.23038C0.257812 7.80857 1.25222 10.0384 3.21354 12.8579C4.64711 14.919 6.05708 16.5139 6.11648 16.5808L6.4882 17L6.86005 16.5808C6.91932 16.5139 8.32928 14.919 9.76299 12.8579C11.7242 10.0384 12.7187 7.80857 12.7187 6.23038C12.7187 2.7949 9.92368 0 6.4882 0ZM8.95249 12.2823C7.98351 13.6763 7.00414 14.876 6.4882 15.4881C5.97355 14.8777 4.99782 13.6825 4.02948 12.2903C2.21226 9.67793 1.2517 7.58237 1.2517 6.23038C1.2517 3.34301 3.60082 0.993889 6.4882 0.993889C9.3757 0.993889 11.7247 3.34301 11.7247 6.23038C11.7247 7.58095 10.7661 9.67365 8.95249 12.2823Z" fill="#005FA3"/>
+                                <path d="M6.48821 2.30267C4.46062 2.30267 2.8111 3.95219 2.8111 5.97979C2.8111 8.00739 4.46062 9.65704 6.48821 9.65704C8.51594 9.65704 10.1655 8.00739 10.1655 5.97979C10.1655 3.95219 8.51594 2.30267 6.48821 2.30267ZM6.48821 8.66315C5.00873 8.66315 3.80499 7.4594 3.80499 5.97979C3.80499 4.50031 5.00873 3.29656 6.48821 3.29656C7.96783 3.29656 9.17157 4.50031 9.17157 5.97979C9.17157 7.4594 7.96783 8.66315 6.48821 8.66315Z" fill="#005FA3"/>
+                            </svg> 
+                            Невский пр. 130                            
+                        </li>
+                    </ul>
+                    <nav class="menu">
+                        <ul class="menu__list d-flex">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    ГЛАВНАЯ
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    УСЛУГИ
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    КЕЙСЫ
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    О КОМПАНИИ
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    КОНТАКТЫ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="intro">
+            <div class="container">
+                <div class="intro__wrapper d-flex jcc ai-center">
+                    <div class="intro__content intro__content1 d-flex fd-col">
+                        <h1 class="intro__title">Бухгалтерские услуги<br> 
+                        в Санкт-Петербурге</h1>
+                        <a class="intro__btn btn d-flex jcc ai-center" href="#">Наша презентация</a>
+                    </div>
+                    <div class="intro__content intro__content2 d-flex fd-col">
+                        <h1 class="intro__title">Бухгалтерские услуги<br> 
+                        в Москве</h1>
+                        <a class="intro__btn btn d-flex jcc ai-center" href="#">Наша презентация</a>
+                    </div>
+                    <div class="intro__content intro__content3 d-flex fd-col">
+                        <h1 class="intro__title">Бухгалтерские услуги<br> 
+                        в Воронеже</h1>
+                        <a class="intro__btn btn d-flex jcc ai-center" href="#">Наша презентация</a>
+                    </div>
+                    <div class="intro__content intro__content4 d-flex fd-col">
+                        <h1 class="intro__title">Бухгалтерские услуги<br> 
+                        в Омске</h1>
+                        <a class="intro__btn btn d-flex jcc ai-center" href="#" >Наша презентация</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="services__wrapper">
+                    <h2 class="services__title section__title">Наши услуги</h2>
+                    <h3 class="services__subtitle section__subtitle">Мы специализируемся</h3>
+                    <div class="services__content d-flex flex-w">
+                        <a class="services__card card" href="#">
+                            <p class="card__title">Бухгалтерское обслуживание</p>
+                            <div class="card__effect"></div>
+                            <img class="card__img" src="/images/services/buh.jpg" alt="Бухгалтерское обслуживание">
+                        </a>
+                        <a class="services__card card" href="#">
+                            <p class="card__title">Бухгалтерское обслуживание</p>
+                            <div class="card__effect"></div>
+                            <img class="card__img" src="/images/services/buh.jpg" alt="Бухгалтерское обслуживание">
+                        </a>
+                        <a class="services__card card" href="#">
+                            <p class="card__title">Бухгалтерское обслуживание</p>
+                            <div class="card__effect"></div>
+                            <img class="card__img" src="/images/services/buh.jpg" alt="Бухгалтерское обслуживание">
+                        </a>
+                        <a class="services__card card" href="#">
+                            <p class="card__title">Бухгалтерское обслуживание</p>
+                            <div class="card__effect"></div>
+                            <img class="card__img" src="/images/services/buh.jpg" alt="Бухгалтерское обслуживание">
+                        </a>
+                        <a class="services__card card" href="#">
+                            <p class="card__title">Бухгалтерское обслуживание</p>
+                            <div class="card__effect"></div>
+                            <img class="card__img" src="/images/services/buh.jpg" alt="Бухгалтерское обслуживание">
+                        </a>
+                        <a class="services__card card" href="#">
+                            <p class="card__title">Бухгалтерское обслуживание</p>
+                            <div class="card__effect"></div>
+                            <img class="card__img" src="/images/services/buh.jpg" alt="Бухгалтерское обслуживание">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper d-flex jcs-between">
+                    <div class="about__text">
+                        <h2 class="about__title section__title">О нас</h2>
+                        <h3 class="about__subtitle section__subtitle">Компания<br> <span class="accent">ИвановПром</span></h3>
+                        <h4 class="about__desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</h4>
+                    </div>
+                    <div class="about__content achievements d-flex flex-w jcf-end">
+                        <div class="achievements__card d-flex fd-col jcc">
+                            <p class="achievements__number">90</p>
+                            <p class="achievements__title">Завершено крупных сделок</p>
+                            <a class="achievements__link" href="#">Все кейсы</a>
+                        </div>
+                        <div class="achievements__card d-flex fd-col jcc">
+                            <p class="achievements__number">90</p>
+                            <p class="achievements__title">Завершено крупных сделок</p>
+                            <a class="achievements__link" href="#">Все кейсы</a>
+                        </div>
+                        <div class="achievements__card d-flex fd-col jcc">
+                            <p class="achievements__number">90</p>
+                            <p class="achievements__title">Завершено крупных сделок</p>
+                            <a class="achievements__link" href="#">Все кейсы</a>
+                        </div>
+                        <div class="achievements__card d-flex fd-col jcc">
+                            <p class="achievements__number">90</p>
+                            <p class="achievements__title">Завершено крупных сделок</p>
+                            <a class="achievements__link" href="#">Все кейсы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="container">
+                <div class="clients__wrapper">
+                    <h2 class="clients__title section__title">Наши клиенты</h2>
+                    <h3 class="clients__subtitle section__subtitle">С нами работают</h3>
+                    <div class="clients__content d-flex">
+                        <div class="img__wrapper img__wrapper--size">
+                            <img class="clients__logo" src="/images/clients/client.png" alt="Microsoft">
+                        </div>
+                        <div class="img__wrapper img__wrapper--size">
+                            <img class="clients__logo" src="/images/clients/client.png" alt="Microsoft">
+                        </div>
+                        <div class="img__wrapper img__wrapper--size">
+                            <img class="clients__logo" src="/images/clients/client.png" alt="Microsoft">
+                        </div>
+                        <div class="img__wrapper img__wrapper--size">
+                            <img class="clients__logo" src="/images/clients/client.png" alt="Microsoft">
+                        </div>
+                        <div class="img__wrapper img__wrapper--size">
+                            <img class="clients__logo" src="/images/clients/client.png" alt="Microsoft">
+                        </div>
+                        <div class="img__wrapper img__wrapper--size">
+                            <img class="clients__logo" src="/images/clients/client.png" alt="Microsoft">
+                        </div>
+                        <div class="img__wrapper img__wrapper--size">
+                            <img class="clients__logo" src="/images/clients/client.png" alt="Microsoft">
+                        </div>
+                        <div class="img__wrapper img__wrapper--size">
+                            <img class="clients__logo" src="/images/clients/client.png" alt="Microsoft">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__wrapper">
+                    <h2 class="reviews__title section__title">Отзывы</h2>
+                    <h3 class="reviews__subtitle section__subtitle">Ваши благодарности</h3>
+                    <div class="reviews__content">
+                        <div class="reviews__item review d-flex fd-col jcs-between">
+                            <div class="review__header">
+                                <p class="review__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
+                            </div>
+                            <div class="review__footer d-flex ai-center">
+                                <img class="review__img" src="/images/reviews/avatar.png" alt="Екатерина Иванова">
+                                <div class="review__person d-flex fd-col">
+                                    <p class="review__name">Екатерина Иванова</p>
+                                    <p class="review__company">Директор ООО “Раз-два”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__item review d-flex fd-col jcs-between">
+                            <div class="review__header">
+                                <p class="review__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
+                            </div>
+                            <div class="review__footer d-flex ai-center">
+                                <img class="review__img" src="/images/reviews/avatar.png" alt="Екатерина Иванова">
+                                <div class="review__person d-flex fd-col">
+                                    <p class="review__name">Екатерина Иванова</p>
+                                    <p class="review__company">Директор ООО “Раз-два”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__item review d-flex fd-col jcs-between">
+                            <div class="review__header">
+                                <p class="review__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
+                            </div>
+                            <div class="review__footer d-flex ai-center">
+                                <img class="review__img" src="/images/reviews/avatar.png" alt="Екатерина Иванова">
+                                <div class="review__person d-flex fd-col">
+                                    <p class="review__name">Екатерина Иванова</p>
+                                    <p class="review__company">Директор ООО “Раз-два”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__item review d-flex fd-col jcs-between">
+                            <div class="review__header">
+                                <p class="review__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
+                            </div>
+                            <div class="review__footer d-flex ai-center">
+                                <img class="review__img" src="/images/reviews/avatar.png" alt="Екатерина Иванова">
+                                <div class="review__person d-flex fd-col">
+                                    <p class="review__name">Екатерина Иванова</p>
+                                    <p class="review__company">Директор ООО “Раз-два”</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__wrapper d-flex jcs-between">
+                    <div class="contact__col contact__col1">
+                        <h3 class="contact__title section__title">Связь с нами</h3>
+                        <h4 class="contact__desc">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</h4>
+                        <ul class="contact__methods methods d-flex ai-center">
+                            <li class="methods__item">
+                                <a class="methods__link d-flex ai-center" href="#">
+                                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.4011 0H2.02629C0.912 0 0 0.911143 0 2.02629V27.9729C0 29.088 0.912 30 2.02629 30H15.4011C16.5154 30 17.4274 29.0897 17.4274 27.9737V2.02629C17.4274 0.911143 16.5154 0 15.4011 0ZM6.57429 1.46057H10.8531C10.9886 1.46057 11.0983 1.57029 11.0983 1.70657C11.0983 1.842 10.9886 1.95171 10.8531 1.95171H6.57429C6.43886 1.95171 6.32914 1.842 6.32914 1.70657C6.32914 1.57029 6.43886 1.46057 6.57429 1.46057ZM8.71371 28.9869C8.154 28.9869 7.70057 28.5334 7.70057 27.9729C7.70057 27.4123 8.154 26.9597 8.71371 26.9597C9.27343 26.9597 9.72686 27.4123 9.72686 27.9729C9.72686 28.5334 9.27343 28.9869 8.71371 28.9869ZM16.0174 26.25H1.41V3.21343H16.0174V26.25Z" fill="white"/>
+                                    </svg>
+                                    +7 (111) 222-33-44                            
+                                </a>
+                            </li>
+                            <li class="methods__item">
+                                <a class="methods__link d-flex ai-center" href="#">
+                                    <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M34.6085 0H4.82055C2.1615 0 0 2.1615 0 4.82055V25.1794C0 27.8385 2.1615 30 4.82055 30H34.6003C37.2594 30 39.4209 27.8385 39.4209 25.1794V4.82871C39.429 2.16966 37.2675 0 34.6085 0ZM37.2268 25.1794C37.2268 26.6232 36.0522 27.7977 34.6085 27.7977H4.82055C3.37684 27.7977 2.20228 26.6232 2.20228 25.1794V4.82871C2.20228 3.38499 3.37684 2.21044 4.82055 2.21044H34.6003C36.044 2.21044 37.2186 3.38499 37.2186 4.82871V25.1794H37.2268Z" fill="white"/>
+                                        <path d="M24.8612 14.7472L34.5023 6.10121C34.951 5.69338 34.9917 5.00006 34.5839 4.54329C34.1761 4.09468 33.4828 4.0539 33.026 4.46173L19.7307 16.3948L17.1369 14.0784C17.1288 14.0702 17.1206 14.0621 17.1206 14.0539C17.0635 13.9968 17.0064 13.9479 16.9412 13.8989L6.38651 4.45357C5.92974 4.04574 5.23643 4.08652 4.8286 4.54329C4.42077 5.00006 4.46156 5.69338 4.91833 6.10121L14.6736 14.8206L4.95911 23.9152C4.51865 24.3312 4.49418 25.0245 4.91017 25.4732C5.1304 25.7015 5.42403 25.8239 5.71767 25.8239C5.98684 25.8239 6.25601 25.726 6.46808 25.5303L16.3294 16.3051L19.0048 18.695C19.2169 18.8826 19.4779 18.9723 19.7389 18.9723C19.9999 18.9723 20.2691 18.8745 20.473 18.6869L23.2218 16.2236L33.026 25.5384C33.2381 25.7423 33.5154 25.8402 33.7846 25.8402C34.0782 25.8402 34.3637 25.726 34.5839 25.4976C34.9999 25.0572 34.9836 24.3557 34.5431 23.9397L24.8612 14.7472Z" fill="white"/>
+                                    </svg>
+                                    order@bu-one.ru                                     
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact__col contact__col2">
+                        <form class="contact__form form d-flex fd-col" action="/">
+                            <div class="form__top d-flex jcf-end">
+                                <div class="input__wrapper d-flex fd-col-r">
+                                    <input class="form__firstName form__input" id="firstName" type="name" name="firstName" placeholder="Иван">
+                                    <label class="form__label" for="firstName">Имя</label>
+                                </div>
+                                <div class="input__wrapper d-flex fd-col-r">
+                                    <input class="form__secondName form__input" id="secondName" type="name" name="secondName" placeholder="Иванов">
+                                    <label class="form__label" for="secondName">Фамилия</label>
+                                </div>
+                            </div>
+                            <div class="form__bottom d-flex fd-col ai-end">
+                                <div class="textarea__wrapper d-flex fd-col-r ">
+                                    <textarea class="form__message form__textarea d-flex" name="message" id="msg" placeholder="Ваше сообщение"></textarea>
+                                    <label class="form__label" for="secondName">Сообщение</label>
+                                </div>
+                                <button class="form__submit btn" type="submit">Отправить сообщение</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper d-flex jcs-between ai-center">
+                <p class="footer__copy">2019 (с) Все права защищены. БухОне.ру</p>
+                <p class="footer__developed">Разработано: Козлов Евгений</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/libs/jQuery/jquery.min.js"></script>
+    <script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/intro.js"></script>
+    <script src="js/clients.js"></script>
+    <script src="js/reviews.js"></script>
+</body>
+</html>
