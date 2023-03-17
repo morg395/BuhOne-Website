@@ -497,7 +497,7 @@ li.slick-active button {
 
 .contact {
     width: 100%;
-    background-image: url('/images/contact/background.jpg');
+    background-image: url('../images/contact/background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
