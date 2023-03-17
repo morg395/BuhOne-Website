@@ -142,7 +142,7 @@ header {
 .intro {
     height: 670px;
     position: relative;
-    background: url('/images/intro/background_1.jpg');
+    background: url('../images/intro/background_1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
